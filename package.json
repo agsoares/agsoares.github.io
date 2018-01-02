@@ -1,5 +1,7 @@
 {
   "name": "agsoares.github.io",
+  "author": "Adriano Soares",
+  "repository": "https://github.com/agsoares/agsoares.github.io",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
