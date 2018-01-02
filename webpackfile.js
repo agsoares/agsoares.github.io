@@ -1,3 +1,4 @@
+var path      = require('path');
 const webpack = require('webpack')
 
 module.exports = {
@@ -5,6 +6,7 @@ module.exports = {
   entry: "./main.js",
   output: {
     path: __dirname + "/dist",
+    publicPath : '/dist/',
     filename: "bundle.js"
   },
   module: {
@@ -41,8 +43,10 @@ module.exports = {
     extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {
+    publicPath: '/dist/',
+    contentBase: __dirname,
     historyApiFallback: true,
-    noInfo: true,
+    noInfo: false,
     overlay: true
   },
   performance: {
