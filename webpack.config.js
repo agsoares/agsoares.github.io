@@ -1,5 +1,4 @@
-var path      = require('path');
-const webpack = require('webpack')
+const webpack      = require('webpack')
 
 module.exports = {
   context: __dirname + "/src",
@@ -46,7 +45,7 @@ module.exports = {
     publicPath: '/dist/',
     contentBase: __dirname,
     historyApiFallback: true,
-    noInfo: false,
+    noInfo: true,
     overlay: true
   },
   performance: {
